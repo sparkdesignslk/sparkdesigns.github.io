@@ -17,8 +17,8 @@ body {
 /* Define @font-face for the local font */
 @font-face {
     font-family: 'Overcame demo';
-    src: url('OvercameDemoBold.ttf.woff2') format('woff2'), /* Define the path to your font file */
-         url('OvercameDemoBold.ttf.woff') format('woff'); /* Add other formats if needed */
+    src: url('OvercameDemoBold.ttf') format('woff2'), /* Define the path to your font file */
+         url('OvercameDemoBold.ttf') format('woff'); /* Add other formats if needed */
 }
 
 /* Apply the local font to the navigation */
