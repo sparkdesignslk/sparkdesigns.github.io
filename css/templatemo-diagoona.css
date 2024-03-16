@@ -10,16 +10,13 @@
     <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
     <link href="css/templatemo-diagoona.css" rel="stylesheet" />
     <style>
-        /* Define @font-face for the local font */
         @font-face {
-            font-family: 'LEMONMILK';
-            src: url('LEMONMILK-Medium.otf') format('opentype');
-            /* Add other font formats if needed */
+            font-family: 'LEMONMILK-Medium';
+            src: url('LEMONMILK-Medium.otf') format('opentype'); /* Define the path to your font file */
         }
 
-        /* Apply the local font to the navigation links */
         .nav-link {
-            font-family: 'LEMONMILK', sans-serif;
+            font-family: 'LEMONMILK-Medium', sans-serif; /* Apply the font to navigation links */
         }
     </style>
 </head>
@@ -47,13 +44,13 @@
                                 <a class="nav-link tm-nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link tm-nav-link" href="services.html">Services</a>
+                                <a class="nav-link tm-nav-link" href="services.html">SERVICES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link tm-nav-link" href="contact.html">CONTACT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                <a class="nav-link tm-nav-link" href="about.html">ABOUT</a>
                             </li>
                         </ul>
                     </div>
