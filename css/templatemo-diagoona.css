@@ -15,7 +15,7 @@
             src: url('LEMONMILK-Medium.otf') format('opentype'); /* Define the path to your font file */
         }
 
-        .nav-link {
+        .navbar-nav .nav-link {
             font-family: 'LEMONMILK-Medium', sans-serif; /* Apply the font to navigation links */
         }
     </style>
