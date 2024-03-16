@@ -16,14 +16,14 @@ body {
 }
 /* Define @font-face for the local font */
 @font-face {
-    font-family: 'Overcame demo';
-    src: url('OvercameDemoBold.ttf') format('woff2'), /* Define the path to your font file */
-         url('OvercameDemoBold.ttf') format('woff'); /* Add other formats if needed */
+    font-family: 'LEMONMILK';
+    src: url('LEMONMILK-Medium.otf') format('woff2'), /* Define the path to your font file */
+         url('LEMONMILK-Medium.otf') format('woff'); /* Add other formats if needed */
 }
 
 /* Apply the local font to the navigation */
 .navbar-nav .nav-link {
-    font-family: 'Overcame demo', sans-serif; /* Use the local font */
+    font-family: 'LEMONMILK', sans-serif; /* Use the local font */
 }
 
 
