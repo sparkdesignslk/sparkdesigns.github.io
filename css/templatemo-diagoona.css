@@ -150,9 +150,10 @@ p { line-height: 1.9; }
     height: 100%;
     padding-left: 40px;  
     padding-right: 40px;
-    /* Fade-in animation */
-    opacity: 0;
-    transition: opacity 0.6s ease;
+    /* Parallax effect */
+    transform: translate3d(0, 0, 0);
+    perspective: 1px;
+    transform-style: preserve-3d;
 }
 
 .tm-col-right {
@@ -160,29 +161,17 @@ p { line-height: 1.9; }
     height: 100%;
     padding-left: 70px;
     padding-right: 70px;
-    /* Fade-in animation */
-    opacity: 0;
-    transition: opacity 0.6s ease;
 }
 
 .tm-content {
     max-width: 660px;
     margin-top: 50px;
     padding-right: 20px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.6s ease-in-out; /* Fade-in transition */
 }
 
 .tm-about { max-width: 525px; }
-
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 10px;
-}
-  
-::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: rgba(255,255,255,.8);
-    box-shadow: 0 0 1px rgba(255,255,255,.8);
-}
 
 .tm-content-title { font-size: 1.5rem; }
 hr { border-top: 1px solid white; }
@@ -386,4 +375,19 @@ textarea {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Contact */
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: white;
+}
+
+/* Additional styles for the contact link */
+.nav-item.active .tm-nav-link,
+.nav-item:hover .tm-nav-link,
+.nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+    color: #9CC;
 }
