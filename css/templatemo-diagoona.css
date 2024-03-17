@@ -20,6 +20,7 @@ body {
 /* Apply the local font to the navigation */
 .navbar-nav .nav-link {
     font-family: 'LEMONMILK', sans-serif; /* Use the local font */
+    color: white; /* Set default color to white */
 }
 
 a, button, .btn, .form-control, textarea, .navbar-toggler {
@@ -65,7 +66,7 @@ p { line-height: 1.9; }
 
 .nav-item.active .tm-nav-link,
 .nav-item:hover .tm-nav-link {
-    color: #9CC;
+    color: #9CC; /* Change color on hover */
 }
 
 /* Page Background */
