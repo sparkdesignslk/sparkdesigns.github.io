@@ -91,6 +91,27 @@ p { line-height: 1.9; }
 .tm-bg-left {
     border-right: 230px solid rgba(0,0,0,0.5);
     border-top: 100vh solid transparent;
+    /* Parallax effect */
+    transform: perspective(1px) translateY(-50vh);
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.tm-bg-right {
+    /* Parallax effect */
+    transform: perspective(1px) translateY(-30vh);
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.tm-bg:hover .tm-bg-left {
+    /* Parallax effect on hover */
+    transform: perspective(1px) translateY(-70vh);
+}
+
+.tm-bg:hover .tm-bg-right {
+    /* Parallax effect on hover */
+    transform: perspective(1px) translateY(-50vh);
 }
 
 .tm-bg-controls-wrapper {
@@ -129,6 +150,9 @@ p { line-height: 1.9; }
     height: 100%;
     padding-left: 40px;  
     padding-right: 40px;
+    /* Fade-in animation */
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
 
 .tm-col-right {
@@ -136,6 +160,9 @@ p { line-height: 1.9; }
     height: 100%;
     padding-left: 70px;
     padding-right: 70px;
+    /* Fade-in animation */
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
 
 .tm-content {
@@ -343,4 +370,20 @@ textarea {
     .tm-service-text { margin-top: 20px; }
     .tm-service-img { margin-right: 0; }
     .tm-service-img-r { margin-left: 0; }
+}
+
+/* Fade-in Animation */
+.tm-col-left, .tm-col-right {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
