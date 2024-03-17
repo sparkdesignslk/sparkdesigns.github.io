@@ -18,11 +18,9 @@ body {
 }
 
 /* Apply the local font to the navigation */
-.navbar-nav .nav-link,
-.navbar-nav .nav-link-contacts { /* Add a specific class for Contacts navigation item */
+.navbar-nav .nav-link {
     font-family: 'LEMONMILK', sans-serif; /* Use the local font */
     color: white; /* Set default color to white */
-    /* Add other common styling rules here */
 }
 
 a, button, .btn, .form-control, textarea, .navbar-toggler {
@@ -53,8 +51,7 @@ p { line-height: 1.9; }
     padding-right: 0;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link,
-.navbar-expand-lg .navbar-nav .nav-link-contacts { /* Apply common styling rules to all nav links */
+.navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
     font-size: 1.3rem;
     font-weight: 400;
@@ -67,9 +64,7 @@ p { line-height: 1.9; }
 .nav-item:last-child { margin-right: 0; }
 
 .nav-item.active .nav-link,
-.nav-item.active .nav-link-contacts,
-.nav-item:hover .nav-link,
-.nav-item:hover .nav-link-contacts {
+.nav-item:hover .nav-link {
     color: #9CC; /* Change color on hover */
 }
 
@@ -183,61 +178,4 @@ hr { border-top: 1px solid white; }
 
 .btn-primary:hover {
     background-color: #9CC;
-    color: black;
-}
-
-.tm-site-footer {
-    padding: 40px 0 20px;
-    max-width: 660px;
-    font-size: 0.95rem;
-}
-
-.tm-col-footer { padding-left: 0; }
-.tm-text-link { color: white; }
-
-.tm-text-link:hover,
-.tm-text-link:focus {
-    color: #9CC;
-}
-
-/* Service */ 
-.tm-service-text { max-width: 365px; }
-.tm-service-img { margin-right: 25px; }
-.tm-service-img-r { margin-left: 25px; }
-
-/* Contact */
-.form-control,
-textarea {    
-    color: white;
-    background-color: transparent;
-    background-clip: padding-box;
-    border: none;
-    border-bottom: 1px solid #999A9B;
-    border-radius: 0;
-    transition: border-color 0.6s ease, box-shadow 0.6s ease; /* Smooth transition for border-color and box-shadow */
-    padding: 10px 0;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.form-control:focus {
-    color: white;
-    background-color: transparent;    
-    box-shadow: none;
-    border-color: #9CC;
-    outline: none;
-}
-
-.mb-85 { margin-bottom: 85px; }
-.tm-contact-main { max-width: 690px; }
-
-.tm-contact {
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.form-control::-webkit-input-placeholder { color: white; } /* Edge */  
-.form-control:-ms-input-placeholder { color: white; } /* Internet Explorer 10-
+    color:
