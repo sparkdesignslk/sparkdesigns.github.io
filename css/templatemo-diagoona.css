@@ -178,4 +178,6 @@ hr { border-top: 1px solid white; }
 
 .btn-primary:hover {
     background-color: #9CC;
-    color:
+    color: #fff; /* Change to your desired text color on hover */
+}
+
